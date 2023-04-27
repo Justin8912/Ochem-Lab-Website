@@ -21,13 +21,13 @@ export default function NavBar() {
         <div className="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
           <div className="text-sm lg:flex-grow">
             <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-200 mr-4">
-              CH220C
+              CH 220C
             </Link>
             <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-200 mr-4">
-              CH128K
+              CH 128K
             </Link>
             <Link href="#responsive-header" className="block mt-4 lg:inline-block lg:mt-0 hover:text-slate-200 mr-4">
-              CH128L
+              CH 128L
             </Link>
           </div>
         </div>

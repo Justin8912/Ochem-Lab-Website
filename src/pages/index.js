@@ -11,19 +11,19 @@ export default function Home() {
   return (
     <main>
       <NavBar />
-      <div className='grid grid-cols-3 gap-4 container mx-auto px-5 mt-10' >
+      <div className='grid grid-cols-3 gap-4 container mx-auto px-5 mt-20' >
         <HomepageCard
-          courseName='CH220C'
+          courseName='CH 220C'
           courseDescription='Organic Chemistry labs for health science majors'
           imageLink='CH220C'
         />
         <HomepageCard
-          courseName='CH128K'
+          courseName='CH 128K'
           courseDescription='Organic Chemistry labs for chemistry majors - first semester'
           imageLink='CH128K'
         />
         <HomepageCard
-          courseName='CH128L'
+          courseName='CH 128L'
           courseDescription='Organic Chemistry labs for chemistry majors - second semester'
           imageLink='CH128L'
         />

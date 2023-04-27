@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import footerImg from '../resources/header.svg'
-
+import Link from 'next/link';
 
 export default function Footer (props) {
   return (
@@ -31,19 +31,16 @@ export default function Footer (props) {
                 Useful links
               </h6>
               <p class="mb-4">
-                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                  >Quest</a
-                >
+                <Link href="https://quest.cns.utexas.edu/" class="hover:text-slate-200"
+                  >Quest</Link>
               </p>
               <p class="mb-4">
-                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                  >Turnitin</a
-                >
+                <Link href="https://www.turnitin.com/" class="hover:text-slate-200"
+                  >Turnitin</Link>
               </p>
               <p>
-                <a href="#!" class="text-neutral-600 dark:text-neutral-200"
-                  >Canvas</a
-                >
+                <Link href="https://canvas.utexas.edu/" class="hover:text-slate-200"
+                  >Canvas</Link>
               </p>
             </div>
             <div>
@@ -56,7 +53,7 @@ export default function Footer (props) {
                 <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
                 <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
               </svg>
-              &nbsp; &nbsp; Office NHB 1.128
+              &nbsp; &nbsp; NHB 1.128
               </p>
               <p class="mb-4 flex items-center justify-center md:justify-start">
                 <svg

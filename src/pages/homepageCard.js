@@ -6,15 +6,15 @@ import CH128L from '../../resources/128Lhomepage.png'
 
 export default function HomepageCard (props) {
   let imgHolder, buttonColor, buttonColorHover;
-  if (props.courseName === 'CH220C') {
+  if (props.imageLink === 'CH220C') {
     imgHolder = CH220C;
     buttonColor = 'bg-blue-700';
     buttonColorHover = 'bg-blue-600';
-  } else if (props.courseName === 'CH128K') {
+  } else if (props.imageLink === 'CH128K') {
     imgHolder = CH128K;
     buttonColor = 'bg-red-700';
     buttonColorHover = 'bg-red-400';
-  } else if (props.courseName === 'CH128L') {
+  } else if (props.imageLink === 'CH128L') {
     imgHolder = CH128L;
     buttonColor = 'bg-green-700';
     buttonColorHover = 'bg-green-400';
