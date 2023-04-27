@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import NavBar from '../../navbar/navbar.js';
 import image from '../../resources/header.svg';
 import HomepageCard from './homepageCard.js';
+import Footer from '../../navbar/footer.js';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,6 +28,7 @@ export default function Home() {
           imageLink='CH128L'
         />
       </div>
+      <Footer/>
     </main>
   )
 }
