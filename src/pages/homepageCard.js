@@ -21,7 +21,7 @@ export default function HomepageCard (props) {
   }
   return (
     <>
-      <div className="max-w-md rounded overflow-hidden shadow-lg" style={{backgroundColor:'#efefef'}}>
+      <div className="max-w-md rounded overflow-hidden shadow-lg min-w-min mx-auto" style={{backgroundColor:'#efefef'}}>
         <div className="px-6 py-4">
           <div className="font-bold text-xl mb-3 text-center">{props.courseName}</div>
           {
