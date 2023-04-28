@@ -6,7 +6,7 @@ export default function Footer (props) {
   return (
     <>
       <footer
-        className="burntOrange text-center lg:text-left mt-40 max-h-max max-w-max" style={{position: 'absolute', bottom:'0'}}>
+        className="burntOrange text-center lg:text-left mt-20 max-h-max max-w-max">
         <div className="mx-80 py-10 text-center md:text-left">
           <div className="grid-1 grid gap-8 md:grid-cols-3 lg:grid-cols-3">
             <div className="">

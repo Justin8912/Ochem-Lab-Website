@@ -33,7 +33,7 @@ export default function Home() {
       <div className='container justify-center mx-auto'>
         <SharedContent/>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </main>
   )
 }

@@ -10,22 +10,36 @@ export default function SharedContent (props) {
         </div>
         <div className='grid grid-cols-3 gap-3 flex-col mx-10 items-center'>
           <Button
-            color={'bg-green-700'}
-            hoverColor={'bg-green-600'}
-            name='IR Analysis Flowchart'
-            link='https://fjetland.cm.utexas.edu/courses/organiclab/IRflowchart.gif'/>
-
-          <Button
             color={'bg-orange-700'}
             hoverColor={'bg-orange-600'}
             name='Quest'
             link='https://quest.cns.utexas.edu/'/>
 
           <Button
-            color={'bg-yellow-600'}
-            hoverColor={'bg-orange-500'}
+            color={'bg-yellow-500'}
+            hoverColor={'bg-yellow-400'}
             name='Turnitin'
             link='https://www.turnitin.com/'/>
+
+          <Button
+            color={'bg-blue-700'}
+            hoverColor={'bg-yellow-600'}
+            name='Saftey'
+            link='#!'/>
+        </div>
+        <div className='grid grid-cols-2 gap-3 flex-col items-center mx-20'>
+
+          <Button
+            color={'bg-pink-700'}
+            hoverColor={'bg-pink-600'}
+            name='IR Analysis Flowchart'
+            link='https://fjetland.cm.utexas.edu/courses/organiclab/IRflowchart.gif'/>
+
+          <Button
+            color={'bg-teal-700'}
+            hoverColor={'bg-teal-600'}
+            name='Email & Office Hours'
+            link='#!'/>
 
         </div>
     </div>
