@@ -8,7 +8,7 @@ export default function SharedContent (props) {
       <div className="font-bold text-xl mb-3 text-center">Quick Links</div>
 
         </div>
-        <div className='grid grid-cols-3 gap-3 flex-col mx-10 items-center'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-3 flex-col mx-10 items-center'>
           <Button
             color={'bg-orange-700'}
             hoverColor={'bg-orange-600'}
@@ -24,10 +24,10 @@ export default function SharedContent (props) {
           <Button
             color={'bg-blue-700'}
             hoverColor={'bg-yellow-600'}
-            name='Saftey'
+            name='Safety'
             link='#!'/>
         </div>
-        <div className='grid grid-cols-2 gap-3 flex-col items-center mx-20'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-3 flex-col items-center mx-10 md:mx-20'>
 
           <Button
             color={'bg-pink-700'}
