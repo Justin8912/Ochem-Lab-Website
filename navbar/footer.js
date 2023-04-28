@@ -21,8 +21,8 @@ export default function Footer (props) {
                 />
                 Organic Chemistry Labs
               </h6>
-              <p>
-              Please direct any comments or questions you may have about this web site to Dr. Conrad Fjetland.
+              <p className=''>
+              Please direct any comments or questions you may have about this website to Dr. Conrad Fjetland.
               </p>
             </div>
             <div className="">
