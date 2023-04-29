@@ -1,12 +1,12 @@
 import Image from 'next/image';
-import footerImg from '../resources/header.svg'
+import footerImg from '../../../resources/header.svg'
 import Link from 'next/link';
 
 export default function Footer (props) {
   return (
     <>
       <footer
-        className="burntOrange text-center lg:text-left mt-20 max-h-max max-w-max">
+        className="burntOrange text-center lg:text-left  max-h-max max-w-max">
         <div className="mx-20 md:mx-80 py-10 text-center md:text-left">
           <div className="grid-1 grid gap-8 md:grid-cols-3 lg:grid-cols-3">
             <div className="">

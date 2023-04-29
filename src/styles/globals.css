@@ -36,3 +36,9 @@ body {
   background-color: #ffffff;
   margin: auto;
 }
+
+@layer components {
+  .hover-slate-500 {
+    @apply hover:text-slate-500;
+  }
+}

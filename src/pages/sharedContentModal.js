@@ -1,5 +1,5 @@
 import react from 'react';
-import Button from '../../resources/button.js';
+import Button from './assets/button.js';
 
 export default function SharedContent (props) {
   return (
@@ -25,7 +25,7 @@ export default function SharedContent (props) {
             color={'bg-blue-700'}
             hoverColor={'bg-yellow-600'}
             name='Safety'
-            link='#!'/>
+            link='/saftey/saftey'/>
         </div>
         <div className='grid grid-cols-1 md:grid-cols-2 gap-3 flex-col items-center mx-10 md:mx-20'>
 

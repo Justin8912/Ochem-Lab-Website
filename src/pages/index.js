@@ -1,9 +1,9 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import NavBar from '../../navbar/navbar.js';
+import NavBar from './assets/navbar.js';
 import image from '../../resources/header.svg';
 import HomepageCard from './homepageCard.js';
-import Footer from '../../navbar/footer.js';
+import Footer from './assets/footer.js';
 import SharedContent from './sharedContentModal.js';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -30,7 +30,7 @@ export default function Home() {
         />
       </div>
 
-      <div className='container justify-center mx-auto'>
+      <div className='container justify-center mx-auto mb-20'>
         <SharedContent/>
       </div>
       <Footer/>
