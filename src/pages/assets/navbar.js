@@ -11,7 +11,7 @@ export default function NavBar() {
       <nav className="justify-between burntOrange p-6 md:flex mx-auto text-center md:text-right">
         <div className="flex items-center justify-center md:justify-left flex-shrink-0 text-white mr-6">
           <Image src={headerImage} alt='Header image' height={60} width={60} style={{paddingRight:'10px'}}/>
-          <span className="font-semibold text-xl tracking-tight">Organic Chemistry Labs</span>
+          <Link className="font-semibold text-xl tracking-tight" href='/'>Organic Chemistry Labs</Link>
         </div>
         <div className="w-full block flex-grow md:flex items-center md:w-auto">
           <div className="text-sm md:flex-grow">

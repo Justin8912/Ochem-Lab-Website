@@ -1,8 +1,9 @@
 export default function GeneralSafety() {
   return (
     <>
-      <div>
+      <div className='leading-8'>
         <h1 className='font-bold text-xl'>General Saftey Rules</h1>
+
           <ol className='list-alpha mx-10'>
             <li>
               The goggles provided by the university are to be properly worn at all times in the lab.

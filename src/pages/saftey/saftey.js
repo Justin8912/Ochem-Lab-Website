@@ -32,8 +32,8 @@ export default function Saftey() {
   return (
     <>
       <Header/>
-      <div className='grid grid-cols-5 flex text-slate-800'>
-        <div className='col-span-1 px-10 mr-5 bg-white sidebar-styling transition duration-200 py-9 leading-8' onClick={clickHandler}>
+      <div className='grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-5 flex text-slate-800'>
+        <div className='col-span-1 px-10 md:mr-5 bg-white sidebar-styling transition duration-200 py-9 leading-8' onClick={clickHandler}>
           <h2 className='font-bold text-xl text-center mb-3'>Saftey Topics</h2>
           {/* This will be the sidebar */}
           <h3 className='font-bold hover-slate-500' id='GeneralSafety'>General Safety Rules</h3>
@@ -60,7 +60,7 @@ export default function Saftey() {
             <li className='hover-slate-500'>Electrical</li>
           </ol>
         </div>
-        <div className='col-span-4 py-9'>
+        <div className='sm:col-span-1 md:col-span-2 lg:col-span-4 py-9'>
           <ContentManager/>
         </div>
       </div>
