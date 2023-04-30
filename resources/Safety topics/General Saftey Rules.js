@@ -1,10 +1,10 @@
-export default function GeneralSafety() {
+export default function GeneralSafety(props) {
   return (
     <>
-      <div className='leading-8'>
-        <h1 className='font-bold text-xl'>General Saftey Rules</h1>
+      <div className={props.overallFormat}>
+        <h1 className={props.headingFormat}>General Saftey Rules</h1>
 
-          <ol className='list-alpha mx-10'>
+          <ol className={props.olFormat}>
             <li>
               The goggles provided by the university are to be properly worn at all times in the lab.
             </li>
