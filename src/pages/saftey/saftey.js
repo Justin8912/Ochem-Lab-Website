@@ -1,0 +1,78 @@
+import react, {useState} from 'react';
+import Header from '../assets/navbar.js';
+import Footer from '../assets/footer.js';
+import GeneralSafety from '../../../resources/Safety topics/General Saftey Rules.js'
+import SafetyEq from '../../../resources/Safety topics/Safety Equipment.js'
+
+let HolderState = () => {
+  return (
+    <p>Please make a selection from the left to see content.</p>
+  )
+}
+
+let mainBodyContent = {
+  HolderState: HolderState,
+  GeneralSafety: GeneralSafety,
+  SafetyEq:SafetyEq
+};
+
+export default function Saftey() {
+  let content = {GeneralSafety: GeneralSafety}
+  const [screenContent, setScreenContent] = useState('HolderState');
+
+  let ContentManager = (props) => {
+    return (
+      <>
+        {mainBodyContent[screenContent](props)}
+      </>
+    )
+  }
+
+  let clickHandler = (e) => {
+    if (e.target.id) setScreenContent(e.target.id);
+  }
+  return (
+    <>
+      <Header/>
+      <div className='grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-5 flex text-slate-800'>
+        <div className='col-span-1 min-w-min px-10 md:mr-5 bg-white sidebar-styling transition duration-200 py-9 leading-8 text-left' onClick={clickHandler}>
+          <h2 className='font-bold text-xl text-center mb-3'>Saftey Topics</h2>
+          {/* This will be the sidebar */}
+          <h3 className='font-bold hover-slate-500' id='GeneralSafety'>General Safety Rules</h3>
+          <h3 className='font-bold hover-slate-500' id='SafetyEq'>Safety Equipment</h3>
+          <h3 className='font-bold'>Standard Operating Procedures</h3>
+          <ol className='ml-10 list-alpha'>
+            <li className='hover-slate-500'>Using Needles and Syringes</li>
+            <li className='hover-slate-500'>Using Bromine</li>
+            <li className='hover-slate-500'>Disposing of Waste</li>
+            <li className='hover-slate-500'>Wearing Gloves</li>
+            <li className='hover-slate-500'>Using Acids and Bases</li>
+            <li className='hover-slate-500'>Pressure</li>
+            <li className='hover-slate-500'>Using Organic Chemicals</li>
+            <li className='hover-slate-500'>Glassware</li>
+            <li className='hover-slate-500'>Heating Reactions</li>
+          </ol>
+          <h3 className='font-bold'>Emergency Operating Procedures</h3>
+          <ol className='ml-10 list-alpha'>
+            <li className='hover-slate-500'>Exposure to Chemicals</li>
+            <li className='hover-slate-500'>Fires</li>
+            <li className='hover-slate-500'>Spills</li>
+            <li className='hover-slate-500'>Evacuations</li>
+            <li className='hover-slate-500'>Accidents</li>
+            <li className='hover-slate-500'>Electrical</li>
+          </ol>
+        </div>
+        <div className='sm:col-span-1 md:col-span-3 lg:col-span-3 py-9 px-5'>
+          <ContentManager
+            overallFormat = 'leading-8'
+            headingFormat = 'font-bold text-xl'
+            olFormat = 'list-alpha mx-10 list-inside'
+          />
+        </div>
+
+      </div>
+
+      <Footer/>
+    </>
+  )
+}

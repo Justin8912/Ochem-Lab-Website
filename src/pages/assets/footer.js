@@ -1,17 +1,16 @@
 import Image from 'next/image';
-import footerImg from '../resources/header.svg'
+import footerImg from '../../../resources/header.svg'
 import Link from 'next/link';
 
 export default function Footer (props) {
   return (
     <>
-      <footer
-        class="burntOrange text-center lg:text-left mt-40 max-h-max max-w-max" style={{position: 'absolute', bottom:'0'}}>
-        <div class="mx-80 py-10 text-center md:text-left">
-          <div class="grid-1 grid gap-8 md:grid-cols-3 lg:grid-cols-3">
-            <div class="">
+      <footer className="burntOrange text-center lg:text-left  max-h-max max-w-max">
+        <div className="mx-20 md:mx-40 lg:mx-80 xl:mx-100 py-10 text-center">
+          <div className="grid-1 grid gap-8 md:grid-cols-1 lg:grid-cols-3 text-center">
+            <div className="">
               <h6
-                class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                className="mb-4 flex items-center justify-center font-semibold uppercase">
                 <Image
                   src={footerImg}
                   height={50}
@@ -21,46 +20,46 @@ export default function Footer (props) {
                 />
                 Organic Chemistry Labs
               </h6>
-              <p>
-              Please direct any comments or questions you may have about this web site to Dr. Conrad Fjetland.
+              <p className='justify-center'>
+              Please direct any comments or questions you may have about this website to Dr. Conrad Fjetland.
               </p>
             </div>
-            <div class="">
+            <div className="justify-center text-center">
               <h6
-                class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                className="mb-4 flex justify-center font-semibold uppercase">
                 Useful links
               </h6>
-              <p class="mb-4">
-                <Link href="https://quest.cns.utexas.edu/" class="hover:text-slate-200"
+              <p className="mb-4">
+                <Link href="https://quest.cns.utexas.edu/" className="hover:text-slate-200"
                   >Quest</Link>
               </p>
-              <p class="mb-4">
-                <Link href="https://www.turnitin.com/" class="hover:text-slate-200"
+              <p className="mb-4">
+                <Link href="https://www.turnitin.com/" className="hover:text-slate-200"
                   >Turnitin</Link>
               </p>
               <p>
-                <Link href="https://canvas.utexas.edu/" class="hover:text-slate-200"
+                <Link href="https://canvas.utexas.edu/" className="hover:text-slate-200"
                   >Canvas</Link>
               </p>
             </div>
-            <div>
+            <div className='justify-center'>
               <h6
-                class="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                className="mb-4 flex justify-center font-semibold uppercase">
                 Contact
               </h6>
-              <p class="mb-4 flex items-center justify-center md:justify-start">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+              <p className="mb-4 flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-building" viewBox="0 0 16 16">
                 <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
                 <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
               </svg>
               &nbsp; &nbsp; NHB 1.128
               </p>
-              <p class="mb-4 flex items-center justify-center md:justify-start">
+              <p className="mb-4 flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
                   fill="currentColor"
-                  class="mr-3 h-5 w-5">
+                  className="mr-3 h-5 w-5">
                   <path
                     d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
                   <path
