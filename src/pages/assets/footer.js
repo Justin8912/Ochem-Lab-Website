@@ -5,13 +5,12 @@ import Link from 'next/link';
 export default function Footer (props) {
   return (
     <>
-      <footer
-        className="burntOrange text-center lg:text-left  max-h-max max-w-max">
-        <div className="mx-20 md:mx-80 py-10 text-center md:text-left">
-          <div className="grid-1 grid gap-8 md:grid-cols-3 lg:grid-cols-3">
+      <footer className="burntOrange text-center lg:text-left  max-h-max max-w-max">
+        <div className="mx-20 md:mx-40 lg:mx-80 xl:mx-100 py-10 text-center">
+          <div className="grid-1 grid gap-8 md:grid-cols-1 lg:grid-cols-3 text-center">
             <div className="">
               <h6
-                className="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
+                className="mb-4 flex items-center justify-center font-semibold uppercase">
                 <Image
                   src={footerImg}
                   height={50}
@@ -21,13 +20,13 @@ export default function Footer (props) {
                 />
                 Organic Chemistry Labs
               </h6>
-              <p className=''>
+              <p className='justify-center'>
               Please direct any comments or questions you may have about this website to Dr. Conrad Fjetland.
               </p>
             </div>
-            <div className="">
+            <div className="justify-center text-center">
               <h6
-                className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                className="mb-4 flex justify-center font-semibold uppercase">
                 Useful links
               </h6>
               <p className="mb-4">
@@ -43,19 +42,19 @@ export default function Footer (props) {
                   >Canvas</Link>
               </p>
             </div>
-            <div>
+            <div className='justify-center'>
               <h6
-                className="mb-4 flex justify-center font-semibold uppercase md:justify-start">
+                className="mb-4 flex justify-center font-semibold uppercase">
                 Contact
               </h6>
-              <p className="mb-4 flex items-center justify-center md:justify-start">
+              <p className="mb-4 flex items-center justify-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-building" viewBox="0 0 16 16">
                 <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
                 <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
               </svg>
               &nbsp; &nbsp; NHB 1.128
               </p>
-              <p className="mb-4 flex items-center justify-center md:justify-start">
+              <p className="mb-4 flex items-center justify-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
