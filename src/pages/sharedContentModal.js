@@ -3,7 +3,7 @@ import Button from './assets/button.js';
 
 export default function SharedContent (props) {
   return (
-    <div className="max-w-lg rounded overflow-hidden shadow-lg mx-auto mt-20" style={{backgroundColor:'#efefef'}}>
+    <div className="max-w-sm md:max-w-md lg:max-w-lg rounded overflow-hidden shadow-lg mx-auto mt-20" style={{backgroundColor:'#efefef'}}>
       <div className="px-6 py-4">
       <div className="font-bold text-xl mb-3 text-center">Quick Links</div>
 
