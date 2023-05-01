@@ -3,6 +3,7 @@ import Header from '../assets/navbar.js';
 import Footer from '../assets/footer.js';
 import GeneralSafety from '../../../resources/Safety topics/General Saftey Rules.js'
 import SafetyEq from '../../../resources/Safety topics/Safety Equipment.js'
+import SOPs from '../../../resources/Safety Topics/SOPs.js';
 
 let HolderState = () => {
   return (
@@ -13,7 +14,10 @@ let HolderState = () => {
 let mainBodyContent = {
   HolderState: HolderState,
   GeneralSafety: GeneralSafety,
-  SafetyEq:SafetyEq
+  SafetyEq: SafetyEq,
+  Needles: SOPs.Needles,
+  Bromine: SOPs.Bromine,
+  Waste: SOPs.Waste
 };
 
 export default function Saftey() {
@@ -42,9 +46,9 @@ export default function Saftey() {
           <h3 className='font-bold hover-slate-500' id='SafetyEq'>Safety Equipment</h3>
           <h3 className='font-bold'>Standard Operating Procedures</h3>
           <ol className='ml-10 list-alpha'>
-            <li className='hover-slate-500'>Using Needles and Syringes</li>
-            <li className='hover-slate-500'>Using Bromine</li>
-            <li className='hover-slate-500'>Disposing of Waste</li>
+            <li className='hover-slate-500' id='Needles'>Using Needles and Syringes</li>
+            <li className='hover-slate-500' id='Bromine'>Using Bromine</li>
+            <li className='hover-slate-500' id='Waste'>Disposing of Waste</li>
             <li className='hover-slate-500'>Wearing Gloves</li>
             <li className='hover-slate-500'>Using Acids and Bases</li>
             <li className='hover-slate-500'>Pressure</li>
