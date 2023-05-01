@@ -17,7 +17,13 @@ let mainBodyContent = {
   SafetyEq: SafetyEq,
   Needles: SOPs.Needles,
   Bromine: SOPs.Bromine,
-  Waste: SOPs.Waste
+  Waste: SOPs.Waste,
+  Gloves: SOPs.Gloves,
+  AandB: SOPs.AandB,
+  Pressure: SOPs.Pressure,
+  UOC: SOPs.UOC,
+  Glass: SOPs.Glass,
+  Heating: SOPs.Heating
 };
 
 export default function Saftey() {
@@ -49,12 +55,12 @@ export default function Saftey() {
             <li className='hover-slate-500' id='Needles'>Using Needles and Syringes</li>
             <li className='hover-slate-500' id='Bromine'>Using Bromine</li>
             <li className='hover-slate-500' id='Waste'>Disposing of Waste</li>
-            <li className='hover-slate-500'>Wearing Gloves</li>
-            <li className='hover-slate-500'>Using Acids and Bases</li>
-            <li className='hover-slate-500'>Pressure</li>
-            <li className='hover-slate-500'>Using Organic Chemicals</li>
-            <li className='hover-slate-500'>Glassware</li>
-            <li className='hover-slate-500'>Heating Reactions</li>
+            <li className='hover-slate-500' id='Gloves'>Wearing Gloves</li>
+            <li className='hover-slate-500' id='AandB'>Using Acids and Bases</li>
+            <li className='hover-slate-500' id='Pressure'>Pressure</li>
+            <li className='hover-slate-500' id='UOC'>Using Organic Chemicals</li>
+            <li className='hover-slate-500' id='Glass'>Glassware</li>
+            <li className='hover-slate-500' id='Heating'>Heating Reactions</li>
           </ol>
           <h3 className='font-bold'>Emergency Operating Procedures</h3>
           <ol className='ml-10 list-alpha'>
