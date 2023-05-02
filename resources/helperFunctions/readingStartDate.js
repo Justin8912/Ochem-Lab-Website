@@ -8,13 +8,13 @@ export default function startDateReader (file) {
       let splitSplit = curr.split('\n');
       for (let y = 0; y < splitSplit.length; y++) {
         if (y === 0) {
-          startInfoModified[splitSplit[0]] = [];
+          startInfoModified[splitSplit[0]] = [splitSplit[0]];
         } else {
           startInfoModified[splitSplit[0]].push(splitSplit[y]);
         }
       }
     } else {
-      startInfoModified['heading'] = curr;
+      startInfoModified[curr] = curr;
     }
   }
 

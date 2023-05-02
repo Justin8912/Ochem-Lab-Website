@@ -7,7 +7,7 @@ import readStartDateFile from '../../../resources/helperFunctions/readingStartDa
 
 export default function CH220C (props) {
   let CH220CClassInfo = 'If any additional class information needs to be given, it will be given here.'
-  let startInfoModified = readStartDateFile(startInfo)
+  let startInfoModified = readStartDateFile(startInfo);
 
   return (
     <>
