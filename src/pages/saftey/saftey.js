@@ -1,4 +1,5 @@
 import react, {useState} from 'react';
+import Link from 'next/link';
 import Header from '../assets/navbar.js';
 import Footer from '../assets/footer.js';
 import GeneralSafety from '../../../resources/Safety topics/General Saftey Rules.js';
@@ -10,7 +11,11 @@ import ExampleHA from '../../../resources/Safety topics/exampleHA.js'
 
 let HolderState = () => {
   return (
-    <p>Please make a selection from the left to see content.</p>
+    <>
+      <p>Please make a selection from the left to see content.</p>
+      <br/>
+      <p><strong>All the Abbreviated MSDS Sheets for each chemical can be found on the Quest Page for each experiment.</strong></p>
+    </>
   )
 }
 
@@ -82,7 +87,7 @@ export default function Saftey() {
             <li className='hover-slate-500' id='Electrical'>Electrical</li>
           </ol>
           <h3 className='font-bold hover-slate-500' id='ExHA'>Example Safety Analysis</h3>
-          <h3 className='font-bold hover-slate-500'>All EOPs and SOPs in one file</h3>
+          <Link className='font-bold hover-slate-500' href='https://fjetland.cm.utexas.edu/courses/organiclab/Safety/One%20File.pdf'>All EOPs and SOPs in one file</Link>
         </div>
         <div className='sm:col-span-1 md:col-span-3 lg:col-span-3 py-9 px-5'>
           <ContentManager
