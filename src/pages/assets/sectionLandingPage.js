@@ -6,9 +6,9 @@ export default function LandingPage (props) {
     <>
       <div className='grid grid-cols-1 md:grid-cols-2 my-10'>
         <div className="rounded overflow-hidden shadow-lg w-196 mx-auto" style={{backgroundColor:'#efefef'}}>
-          <div className={`font-bold text-2xl py-4 mb-3 text-center bg-${props.classColor} text-white`}>Start Information</div>
+          <div className={`font-bold text-2xl py-4 mb-3 text-center bg-${props.classColor} text-white px-6`}>Start Information</div>
           <div className="px-6 py-4">
-            <p>loreum ipsium as;ldkfjas;ldkfjasl;kdjfasl;kdjfals;kdjfas;lkdfjas;lkdjfas;ldkjfasd;lfkj</p>
+            <p></p>
           </div>
         </div>
 
