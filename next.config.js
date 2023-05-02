@@ -5,7 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   webpack: (config, options) => {
     config.module.rules.push({
-      test: /\.my-file$/i,
+      test: /\.txt$/i,
       loader: 'raw-loader'
     })
 

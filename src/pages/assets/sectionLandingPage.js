@@ -1,11 +1,25 @@
 import react from 'react';
 import Button from './button.js';
+import {v4 as uuidv4} from 'uuid';
 
 export default function LandingPage (props) {
   return (
     <>
       <div className='grid grid-cols-1 my-10'>
-        <div className="rounded overflow-hidden shadow-lg w-196 mx-auto" style={{backgroundColor:'#efefef'}}>
+
+      <div className="rounded overflow-hidden shadow-lg w-196 mx-auto mb-10" style={{backgroundColor:'#efefef'}}>
+        <div className={`font-bold text-2xl py-4 mb-3 px-6 text-center bg-${props.classColor} text-white`}>Syllabus</div>
+        <div className="px-6 py-4">
+          <Button
+            link=''
+            color={`bg-${props.classColor}`}
+            name={'Click here to see the syllabus'}
+          />
+        </div>
+      </div>
+
+
+        <div className="rounded overflow-hidden shadow-lg w-196 mx-auto mb-10" style={{backgroundColor:'#efefef'}}>
           <div className={`font-bold text-2xl py-4 mb-3 text-center bg-${props.classColor} text-white px-6`}>Start Date</div>
           <div className="px-10 py-4 mx-auto align-center justify-center text-center">
             {Object.keys(props.startInfo).map((element, idx) => {
@@ -16,11 +30,11 @@ export default function LandingPage (props) {
                       {props.startInfo[element].map((listE, ydx) => {
                         if (ydx === 0) {
                           return (
-                            <p key={`${ydx}-header`}>{listE}</p>
+                            <p key={uuidv4()}>{listE}</p>
                           )
                         } else {
                           return (
-                            <li key={`${ydx}-${listE}`}>{listE}</li>
+                            <li key={uuidv4()}>{listE}</li>
                           )
                         }
                       })}
@@ -31,23 +45,12 @@ export default function LandingPage (props) {
               } else {
                 return (
                   <>
-                    <p key={idx}>{props.startInfo[element]}</p>
+                    <p key={uuidv4()}>{props.startInfo[element]}</p>
                     <br/>
                   </>
                 )
               }
             })}
-          </div>
-        </div>
-
-        <div className="rounded overflow-hidden shadow-lg w-196 mx-auto my-10" style={{backgroundColor:'#efefef'}}>
-          <div className={`font-bold text-2xl py-4 mb-3 px-6 text-center bg-${props.classColor} text-white`}>Syllabus</div>
-          <div className="px-6 py-4">
-            <Button
-              link=''
-              color={`bg-${props.classColor}`}
-              name={'Click here to see the syllabus'}
-            />
           </div>
         </div>
 

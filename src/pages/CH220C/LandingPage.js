@@ -2,7 +2,7 @@ import react from 'react';
 import Navbar from '../assets/navbar.js';
 import Footer from '../assets/footer.js';
 import LandingPage from '../assets/sectionLandingPage.js'
-import startInfo from '../../../resources/classInfo/CH220CStart.my-file';
+import startInfo from '../../../resources/classInfo/CH220CStart.txt';
 import readStartDateFile from '../../../resources/helperFunctions/readingStartDate.js';
 
 export default function CH220C (props) {
