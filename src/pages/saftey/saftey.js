@@ -4,6 +4,7 @@ import Footer from '../assets/footer.js';
 import GeneralSafety from '../../../resources/Safety topics/General Saftey Rules.js'
 import SafetyEq from '../../../resources/Safety topics/Safety Equipment.js'
 import SOPs from '../../../resources/Safety Topics/SOPs.js';
+import EOPs from '../../../resources/Safety Topics/EOPs.js';
 
 let HolderState = () => {
   return (
@@ -23,7 +24,13 @@ let mainBodyContent = {
   Pressure: SOPs.Pressure,
   UOC: SOPs.UOC,
   Glass: SOPs.Glass,
-  Heating: SOPs.Heating
+  Heating: SOPs.Heating,
+  EtC: EOPs.EtC,
+  Fires: EOPs.Fires,
+  Spills: EOPs.Spills,
+  Evacuations: EOPs.Evacuations,
+  Accidents: EOPs.Accidents,
+  Electrical: EOPs.Electrical
 };
 
 export default function Saftey() {
@@ -64,13 +71,15 @@ export default function Saftey() {
           </ol>
           <h3 className='font-bold'>Emergency Operating Procedures</h3>
           <ol className='ml-10 list-alpha'>
-            <li className='hover-slate-500'>Exposure to Chemicals</li>
-            <li className='hover-slate-500'>Fires</li>
-            <li className='hover-slate-500'>Spills</li>
-            <li className='hover-slate-500'>Evacuations</li>
-            <li className='hover-slate-500'>Accidents</li>
-            <li className='hover-slate-500'>Electrical</li>
+            <li className='hover-slate-500' id='EtC'>Exposure to Chemicals</li>
+            <li className='hover-slate-500' id='Fires'>Fires</li>
+            <li className='hover-slate-500' id='Spills'>Spills</li>
+            <li className='hover-slate-500' id='Evacuations'>Evacuations</li>
+            <li className='hover-slate-500' id='Accidents'>Accidents</li>
+            <li className='hover-slate-500' id='Electrical'>Electrical</li>
           </ol>
+          <h3 className='font-bold hover-slate-500'>Example Safety Analysis</h3>
+          <h3 className='font-bold hover-slate-500'>All EOPs and SOPs in one file</h3>
         </div>
         <div className='sm:col-span-1 md:col-span-3 lg:col-span-3 py-9 px-5'>
           <ContentManager
