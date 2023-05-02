@@ -1,5 +1,6 @@
 import react from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import CH220C from '../../resources/220Chomepage.png'
 import CH128K from '../../resources/128Khomepage.png'
 import CH128L from '../../resources/128Lhomepage.png'
@@ -34,14 +35,13 @@ export default function HomepageCard (props) {
               className='mx-auto'
             />
           }
-            <p className="text-gray-700 text-base mt-5">
-              {props.courseDescription}
-            </p>
           </div>
           <div className='flex flex-col items-center'>
-            <button className={`${buttonColor} hover:${buttonColorHover} text-white font-bold py-2 px-4 rounded mb-5 tracking-wide`}>
-              Continue
-            </button>
+            <Link href={`${props.imageLink}/LandingPage`}>
+              <button className={`${buttonColor} hover:${buttonColorHover} text-white font-bold py-2 px-4 rounded mb-5 tracking-wide`}>
+                Continue
+              </button>
+            </Link>
           </div>
       </div>
     </>
