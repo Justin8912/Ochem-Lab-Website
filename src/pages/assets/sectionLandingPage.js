@@ -1,8 +1,10 @@
 import react from 'react';
 import Button from './button.js';
 import {v4 as uuidv4} from 'uuid';
+import Link from 'next/link';
 
 export default function LandingPage (props) {
+  console.log(props)
   return (
     <>
       <div className='grid grid-cols-1 my-10'>
@@ -57,7 +59,25 @@ export default function LandingPage (props) {
         <div className="rounded overflow-hidden shadow-lg w-196 mx-auto" style={{backgroundColor:'#efefef'}}>
           <div className={`font-bold text-2xl py-4 px-6 mb-3 text-center bg-${props.classColor} text-white`}>Relevant class information</div>
           <div className="px-6 py-4">
-            <p>{props.classInfo}</p>
+            {props.moreClassInfo.map((element, idx) => {
+              return (
+                <p key={uuidv4()}>{element}</p>
+              )
+            })}
+
+            {props.classInfoLabs.map((obj) => {
+              return (
+                <>
+                  {Object.keys(obj).map((key, idx) => {
+                    console.log(key)
+                    return (
+                      <Link href={obj.link} key={uuidv4()}>{obj.lab}</Link>
+                    )
+                  })}
+                </>
+              )
+
+            })}
           </div>
         </div>
       </div>
