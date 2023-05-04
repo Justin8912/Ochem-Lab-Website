@@ -1,6 +1,4 @@
 import react from 'react';
-import Navbar from '../assets/navbar.js';
-import Footer from '../assets/footer.js';
 import LandingPage from '../assets/sectionLandingPage.js'
 import startInfo from '../../../resources/classInfo/CH220C/Start.txt';
 import relevantInfo from '../../../resources/classInfo/CH220C/RelevantInfo.txt'
@@ -13,14 +11,12 @@ export default function CH220C (props) {
 
   return (
     <>
-      <Navbar/>
       <LandingPage
         classColor='blue-700'
         classInfoLabs = {CH220CClassInfo.labs}
         moreClassInfo = {CH220CClassInfo.moreInformation}
         startInfo={startInfoModified}
       />
-      <Footer/>
     </>
   )
 }
