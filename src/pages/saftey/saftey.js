@@ -1,7 +1,5 @@
 import react, {useState} from 'react';
 import Link from 'next/link';
-import Header from '../assets/navbar.js';
-import Footer from '../assets/footer.js';
 import GeneralSafety from '../../../resources/Safety topics/General Saftey Rules.js';
 import SafetyEq from '../../../resources/Safety topics/Safety Equipment.js';
 import SOPs from '../../../resources/Safety Topics/SOPs.js';
@@ -58,7 +56,6 @@ export default function Saftey() {
   }
   return (
     <>
-      <Header/>
       <div className='grid sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-5 flex text-slate-800'>
         <div className='col-span-1 min-w-min px-10 md:mr-5 bg-white sidebar-styling transition duration-200 py-9 leading-8 text-left' onClick={clickHandler}>
           <h2 className='font-bold text-xl text-center mb-3'>Saftey Topics</h2>
@@ -99,7 +96,6 @@ export default function Saftey() {
 
       </div>
 
-      <Footer/>
     </>
   )
 }
