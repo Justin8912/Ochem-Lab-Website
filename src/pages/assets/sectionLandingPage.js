@@ -7,7 +7,6 @@ export default function LandingPage (props) {
   return (
     <>
       <div className='grid grid-cols-1 my-10'>
-
       <div className="rounded overflow-hidden shadow-lg w-196 mx-auto mb-10" style={{backgroundColor:'#efefef'}}>
         <div className={`font-bold text-2xl py-4 mb-3 px-6 text-center bg-${props.classColor} text-white`}>Syllabus</div>
         <div className="px-6 py-4">
@@ -55,12 +54,15 @@ export default function LandingPage (props) {
           </div>
         </div>
 
-        <div className="rounded overflow-hidden shadow-lg w-196 mx-auto" style={{backgroundColor:'#efefef'}}>
+        <div className="rounded overflow-hidden shadow-lg w-96 xl:w-1/3 mx-auto" style={{backgroundColor:'#efefef'}}>
           <div className={`font-bold text-2xl py-4 px-6 mb-3 text-center bg-${props.classColor} text-white`}>Relevant class information</div>
           <div className="px-6 py-4 text-center">
             {props.moreClassInfo.map((element, idx) => {
               return (
-                <p key={uuidv4()}>{element}</p>
+                <>
+                  <p key={uuidv4()}>{element}</p>
+                  <br/>
+                </>
               )
             })}
 
