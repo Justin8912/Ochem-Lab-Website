@@ -19,11 +19,11 @@ export default function readingRelevantInfo (file) {
         obj = {};
         obj['info'] = [firstElem];
         for (let i = 0 ; i < splitLine.length; i++) {
-          obj['info'].push(splitLine[i]);
+          obj['info'].push(splitLine[i].trim());
         }
         info.moreInformation.push(obj)
       } else {
-        info.moreInformation.push(splitInfo[i]);
+        info.moreInformation.push(splitInfo[i].trim());
       }
     }
   }

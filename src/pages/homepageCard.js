@@ -14,11 +14,11 @@ export default function HomepageCard (props) {
   } else if (props.imageLink === 'CH128K') {
     imgHolder = CH128K;
     buttonColor = 'bg-red-700';
-    buttonColorHover = 'bg-red-400';
+    buttonColorHover = 'bg-red-600';
   } else if (props.imageLink === 'CH128L') {
     imgHolder = CH128L;
     buttonColor = 'bg-green-700';
-    buttonColorHover = 'bg-green-400';
+    buttonColorHover = 'bg-green-600';
   }
   return (
     <>

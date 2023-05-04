@@ -9,6 +9,60 @@ export default function LandingPage (props) {
       <div
         className='grid grid-cols-1 my-10 mx-10 xl:mx-48 xl:mt-24 xl:mb-32 xl:grid-cols-2 '
       >
+
+        <div className='col-span-1'>
+          <div
+          className="rounded overflow-hidden shadow-lg mx-auto h-min max-w-lg"
+          style={{backgroundColor:'#efefef'}}
+          >
+            <div className={`font-bold text-2xl py-4 px-6 mb-3 text-center bg-${props.classColor} text-white`}>Important Documents</div>
+              <div className="px-6 py-4 text-center">
+                {props.moreClassInfo.map((element, idx) => {
+                  if (typeof element === 'object') {
+                    return (
+                      <>
+                        {element.info.map(val => {
+                          return (
+                            <>
+                              <p key={uuidv4()}>{val}</p>
+                            </>
+                          )
+                        })}
+                        <br/>
+                      </>
+                    )
+                  } else {
+                  return (
+                    <>
+                      <p key={uuidv4()}>{element}</p>
+                      <br/>
+                    </>
+                  )
+                }})}
+                <Button
+                    link=''
+                    color={`bg-${props.classColor}`}
+                    name={'Syllabus'}
+                  />
+
+              {props.classInfoLabs.map((obj) => {
+                return (
+                  <>
+                    <br/>
+                    <Button
+                      link={obj.link}
+                      color={`bg-${props.classColor}`}
+                      name={obj.lab}
+                    />
+                  </>
+                )
+
+              })}
+            </div>
+          </div>
+
+        </div>
+
         <div
           className="rounded overflow-hidden shadow-lg mx-auto col-span-1 h-min mb-10 min-w-lg max-w-full xl:col-span-1 xl:mb-0"
           style={{backgroundColor:'#efefef'}}
@@ -47,57 +101,7 @@ export default function LandingPage (props) {
           </div>
         </div>
 
-        <div className='col-span-1'>
-          <div
-          className="rounded overflow-hidden shadow-lg w-96  mx-auto h-min xl:max-w-md"
-          style={{backgroundColor:'#efefef'}}
-        >
-          <div className={`font-bold text-2xl py-4 px-6 mb-3 text-center bg-${props.classColor} text-white`}>Important Documents</div>
-          <div className="px-6 py-4 text-center">
-            {props.moreClassInfo.map((element, idx) => {
-              if (typeof element === 'object') {
-                return (
-                  <>
-                    {element.info.map(val => {
-                      return (
-                        <>
-                          <p key={uuidv4()}>{val}</p>
-                        </>
-                      )
-                    })}
-                    <br/>
-                  </>
-                )
-              } else {
-              return (
-                <>
-                  <p key={uuidv4()}>{element}</p>
-                  <br/>
-                </>
-              )
-            }})}
-            <Button
-                link=''
-                color={`bg-${props.classColor}`}
-                name={'Syllabus'}
-              />
 
-            {props.classInfoLabs.map((obj) => {
-              return (
-                <>
-                  <Button
-                    link={obj.link}
-                    color={`bg-${props.classColor}`}
-                    name={obj.lab}
-                  />
-                </>
-              )
-
-            })}
-          </div>
-        </div>
-
-        </div>
 
       </div>
     </>
