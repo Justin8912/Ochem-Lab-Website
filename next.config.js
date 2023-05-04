@@ -3,6 +3,14 @@ const withPostCSS = require('next-postcss');
 const tailwindcss = require('tailwindcss');
 const nextConfig = {
   reactStrictMode: true,
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.txt$/i,
+      loader: 'raw-loader'
+    })
+
+    return config
+  }
 }
 
 module.exports = withPostCSS({
@@ -11,7 +19,7 @@ module.exports = withPostCSS({
       tailwindcss,
       require('autoprefixer')
     ]
-  }
+  },
 })
 
 module.exports = nextConfig

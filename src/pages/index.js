@@ -15,17 +15,14 @@ export default function Home() {
       <div className='grid md:grid-cols-3 gap-4 container mx-auto px-5 mt-20 sm:grid-cols-1' >
         <HomepageCard
           courseName='CH 220C'
-          courseDescription=''
           imageLink='CH220C'
         />
         <HomepageCard
           courseName='CH 128K'
-          courseDescription=''
           imageLink='CH128K'
         />
         <HomepageCard
           courseName='CH 128L'
-          courseDescription=''
           imageLink='CH128L'
         />
       </div>
