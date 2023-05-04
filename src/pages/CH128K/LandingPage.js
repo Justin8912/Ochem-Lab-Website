@@ -14,7 +14,7 @@ export default function CH128KLandingPage (props) {
     <>
       <Navbar/>
       <LandingPage
-        classColor = 'bg-red-700'
+        classColor='red-700'
         classInfoLabs = {CH128KClassInfo.labs}
         moreClassInfo = {CH128KClassInfo.moreInformation}
         startInfo = {startInfoModified}
