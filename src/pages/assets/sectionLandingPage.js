@@ -55,13 +55,27 @@ export default function LandingPage (props) {
           <div className={`font-bold text-2xl py-4 px-6 mb-3 text-center bg-${props.classColor} text-white`}>Important Documents</div>
           <div className="px-6 py-4 text-center">
             {props.moreClassInfo.map((element, idx) => {
+              if (typeof element === 'object') {
+                return (
+                  <>
+                    {element.info.map(val => {
+                      return (
+                        <>
+                          <p key={uuidv4()}>{val}</p>
+                        </>
+                      )
+                    })}
+                    <br/>
+                  </>
+                )
+              } else {
               return (
                 <>
                   <p key={uuidv4()}>{element}</p>
                   <br/>
                 </>
               )
-            })}
+            }})}
             <Button
                 link=''
                 color={`bg-${props.classColor}`}
