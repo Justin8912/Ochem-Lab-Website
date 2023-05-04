@@ -85,6 +85,7 @@ export default function LandingPage (props) {
             {props.classInfoLabs.map((obj) => {
               return (
                 <>
+                  <br/>
                   <Button
                     link={obj.link}
                     color={`bg-${props.classColor}`}
