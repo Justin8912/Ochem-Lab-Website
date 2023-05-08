@@ -49,3 +49,5 @@ From here, you will see two files: 'RelevantInfo.txt' and 'Start.txt':
         - The subsequent lines: `Monday: 1-23-23...` will be shown as list elements coming one after the other.
         - In this document, text will be displayed in the order in which you add it into the document.
     - Please separate separate information by a blank line.
+
+Once you make all the necessary changes, run the following command in your terminal: `npm run build`. This updates the bundle that is created by the compiler and will render the changes to your webpage.
