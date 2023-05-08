@@ -4,39 +4,32 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+How to use
+==========
+Customizing content
+-------------------
+### Class specific content
+To change information that is specfic to a specific section follow the following steps:
 
-First, run the development server:
+1. Go to the following directory: 'resources/classinfo'
+2. Choose which section you would like to change
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+From here, you will see two files: 'RelevantInfo.txt' and 'Start.txt':
+- 'RelevantInfo.txt'
+    - This refers to the information that is rendered on each class homepage. It is the content that is rendered in the 'Important Documents' modal. There are two types of information that you can render, as is shown in the picture:
+        - Text, which will be shown at the top of the modal in the order in which it typed in the txt document.
+            - To render a single line of text which will wrap in the modal width, just write one line of text. Do not press enter, as it will mess things up.
+            - If you would like to insert line breaks on the webpage, place `<br/>` and a line break will be inserted. Please refer to the following example which shows how a list of elements is presented:
+            ```
+              For labs you will need the following: <br/> 1. A combination lock <br/> 2. A lab notebook with carbon copy capability <br/> 3. The Course Ebook (Access through Longhorn Access Program)
+            ```
+        - Buttons, which will link to outside resources.
+            - To create a button, you will need to follow the structure that is outlined here:
+            ```
+            Lab: Kinetics vs thermo lecture
+            Link: https://fjetland.cm.utexas.edu/courses/organiclab/Videos/Lectures_files/KvT%20Lecture.mp4
+            ```
+            - This will render a button in the center of the modal which will display the text following 'Lab: ' and link to the resource that is linked after 'Link: '
+            - It is important that you maintain this structure.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+There is one other important thing to remember. Between differing content on the page, PLEASE remember to separate it with one blank line of text. This is important for how the text is parsed.
