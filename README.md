@@ -45,7 +45,7 @@ From here, you will see two files: 'RelevantInfo.txt' and 'Start.txt':
           Wednesday: 1-25-23
           Thursday: 1-26-23
         ```
-            - So in the above example, `Your first lab will be: ` will be on the first line, and will not be included in this list group.
-            - The subsequent lines: `Monday: 1-23-23...` will be shown as list elements coming one after the other.
+        - So in the above example, `Your first lab will be: ` will be on the first line, and will not be included in this list group.
+        - The subsequent lines: `Monday: 1-23-23...` will be shown as list elements coming one after the other.
         - In this document, text will be displayed in the order in which you add it into the document.
     - Please separate separate information by a blank line.
