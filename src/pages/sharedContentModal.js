@@ -39,7 +39,7 @@ export default function SharedContent (props) {
             color={'bg-teal-700'}
             hoverColor={'bg-teal-600'}
             name='Email & Office Hours'
-            link='#!'/>
+            link='/officeHours'/>
 
         </div>
     </div>
