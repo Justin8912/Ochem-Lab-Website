@@ -1,11 +1,10 @@
-import OHDoc from '../../resources/OfficeHours/exampleOH.tsv';
-import readingTSV from '../../resources/helperFunctions/readingTSV.js';
+import OHDoc from '../../resources/OfficeHours/renderedInfo.json';
 import react, {useEffect} from 'react';
 import {v4 as uuidv4} from 'uuid';
 
 export default function OH (props) {
 
-  let file = readingTSV(OHDoc);
+  let file = OHDoc
 
 
   return (

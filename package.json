@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "server": "next dev",
+    "server": "node hi.js; next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -11,8 +11,10 @@
   "dependencies": {
     "eslint": "8.39.0",
     "eslint-config-next": "13.3.1",
+    "fs": "^0.0.1-security",
     "next": "13.3.1",
     "next-postcss": "^2.0.0",
+    "path": "^0.12.7",
     "raw-loader": "^4.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
