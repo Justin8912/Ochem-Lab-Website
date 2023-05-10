@@ -2,7 +2,7 @@ import {v4 as uuidv4} from 'uuid';
 
 export default function TAs (props) {
   return (
-    <table className='text-center border-collapse'>
+    <table className='text-center border-collapse mx-auto'>
       <tbody>
         <tr>
           <th className='px-10'>TA</th>

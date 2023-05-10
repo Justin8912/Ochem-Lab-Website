@@ -42,3 +42,11 @@ body {
     @apply hover:text-slate-500;
   }
 }
+
+.course-content {
+  max-height: fit-content;
+}
+
+.dropdown {
+  height: 69px;
+}
