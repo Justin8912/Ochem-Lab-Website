@@ -29,7 +29,6 @@ function readingTSV(file) {
     let parseSections = (course) => {
       sections = sections.split(course);
       let holder = sections.splice(0, 1).join('').trim();
-      console.log(TA.sections)
       sections = sections.join('');
       if (sections[0] === ',') {
         sections = sections.slice(1, sections.length).trim();
@@ -60,8 +59,6 @@ function readingTSV(file) {
 
   }
 
-  // console.log(result)
-  // console.log(result)
   result = JSON.stringify(result);
   fs.writeFile(path.resolve(__dirname + '/../OfficeHours/renderedInfo.json'), result, (err) => {
     if (err) {
