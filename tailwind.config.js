@@ -14,6 +14,15 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        heightTransition: {
+          '0%': {height: '0px'},
+          '100%': {height: '500px'}
+        },
+        animation: {
+          'height-transition': 'height-transition 2s linear infinite',
+        }
+      },
     },
     listStyleType: {
       alpha: 'upper-alpha'

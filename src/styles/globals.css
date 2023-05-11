@@ -43,8 +43,8 @@ body {
   }
 }
 
-.course-content {
-  max-height: fit-content;
+.expanded-content {
+  height: 380px;
 }
 
 .dropdown {
