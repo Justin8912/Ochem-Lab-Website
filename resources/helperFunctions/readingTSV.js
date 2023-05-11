@@ -22,23 +22,46 @@ function readingTSV(file) {
     let TA = {
       name: name,
       email: email,
-      sections: sections
+      sections: ''
     }
+    console.log(name, email, sections);
 
+    let parseSections = (course) => {
+      sections = sections.split(course);
+      let holder = sections.splice(0, 1).join('').trim();
+      console.log(TA.sections)
+      sections = sections.join('');
+      if (sections[0] === ',') {
+        sections = sections.slice(1, sections.length).trim();
+      }
+      return holder;
+    }
     if (sections.includes('128K')) {
-      result['128K'].push(TA);
+      result['128K'].push({
+        name: name,
+        email: email,
+        sections: parseSections('(128K)')
+      });
     }
-
     if (sections.includes('128L')) {
-      result['128L'].push(TA);
+      result['128L'].push({
+        name: name,
+        email: email,
+        sections: parseSections('(128L)')
+      });
     }
-
     if (sections.includes('220C')) {
-      result['220C'].push(TA);
+      result['220C'].push({
+        name: name,
+        email: email,
+        sections: parseSections('(220C)')
+      });
     }
 
   }
 
+  // console.log(result)
+  // console.log(result)
   result = JSON.stringify(result);
   fs.writeFile(path.resolve(__dirname + '/../OfficeHours/renderedInfo.json'), result, (err) => {
     if (err) {
