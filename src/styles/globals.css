@@ -44,9 +44,13 @@ body {
 }
 
 .expanded-content {
-  height: 430px;
+  height: 420px;
 }
 
 .dropdown {
   height: 69px;
+}
+
+.tableDisplay {
+  height: 283px
 }
