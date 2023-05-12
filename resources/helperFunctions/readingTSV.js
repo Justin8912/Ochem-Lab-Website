@@ -24,7 +24,6 @@ function readingTSV(file) {
       email: email,
       sections: ''
     }
-    console.log(name, email, sections);
 
     let parseSections = (course) => {
       sections = sections.split(course);

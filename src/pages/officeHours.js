@@ -46,8 +46,6 @@ export default function OH (props) {
               color={'red'}
               idHandle={'ch128k'}
             />
-            {/* <TATable section={info['128L']}/>
-            <TATable section={info['220C']}/> */}
             <CourseInfo
               accordian = {accordian}
               class={ch128l}
@@ -56,7 +54,6 @@ export default function OH (props) {
               color={'green'}
               idHandle={'ch128l'}
             />
-
             <CourseInfo
               accordian = {accordian}
               class={ch220c}
@@ -65,13 +62,8 @@ export default function OH (props) {
               color={'blue'}
               idHandle={'ch220c'}
             />
-
           </div>
-
-
-          </div>
-
-
+        </div>
     </>
   )
 }
