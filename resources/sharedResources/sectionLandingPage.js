@@ -12,7 +12,7 @@ export default function LandingPage (props) {
 
         <div className='col-span-1'>
           <div
-          className="rounded overflow-hidden shadow-lg mx-auto h-min max-w-lg"
+          className="rounded overflow-hidden shadow-lg mx-auto h-min max-w-lg mb-8 xl:mb-0 xl:mr-5"
           style={{backgroundColor:'#efefef'}}
           >
             <div className={`font-bold text-2xl py-4 px-6 mb-3 text-center bg-${props.classColor} text-white`}>Important Documents</div>
@@ -35,7 +35,7 @@ export default function LandingPage (props) {
                   return (
                     <>
                       <p key={uuidv4()}>{element}</p>
-                      <br/>
+                      <br key={uuidv4()}/>
                     </>
                   )
                 }})}
@@ -48,7 +48,7 @@ export default function LandingPage (props) {
               {props.classInfoLabs.map((obj) => {
                 return (
                   <>
-                    <br/>
+                    <br key={uuidv4()}/>
                     <Button
                       link={obj.link}
                       color={`bg-${props.classColor}`}
