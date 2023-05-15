@@ -1,5 +1,5 @@
 import react from 'react';
-import Button from './button.js';
+import Button from '../../src/pages/assets/button.js';
 import {v4 as uuidv4} from 'uuid';
 import Link from 'next/link';
 
@@ -53,6 +53,7 @@ export default function LandingPage (props) {
                       link={obj.link}
                       color={`bg-${props.classColor}`}
                       name={obj.lab}
+                      key={uuidv4()}
                     />
                   </>
                 )

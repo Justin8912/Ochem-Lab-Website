@@ -1,5 +1,5 @@
 import react from 'react';
-import LandingPage from '../assets/sectionLandingPage.js'
+import LandingPage from '../../../resources/sharedResources/sectionLandingPage.js';
 import startInfo from '../../../resources/classInfo/CH128L/Start.txt';
 import relevantInfo from '../../../resources/classInfo/CH128L/RelevantInfo.txt'
 import readStartDateFile from '../../../resources/helperFunctions/readingStartDate.js';

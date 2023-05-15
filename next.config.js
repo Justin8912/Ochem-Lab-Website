@@ -8,6 +8,10 @@ const nextConfig = {
       test: /\.txt$/i,
       loader: 'raw-loader'
     })
+    config.module.rules.push({
+      test: /\.tsv$/i,
+      loader: 'raw-loader'
+    })
 
     return config
   }

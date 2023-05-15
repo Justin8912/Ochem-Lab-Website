@@ -42,3 +42,15 @@ body {
     @apply hover:text-slate-500;
   }
 }
+
+.expanded-content {
+  height: 420px;
+}
+
+.dropdown {
+  height: 68px;
+}
+
+.tableDisplay {
+  height: 283px
+}
