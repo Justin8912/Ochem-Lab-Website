@@ -43,7 +43,7 @@ export default function OH (props) {
               class={ch128k}
               info={info['128K']}
               title={'CH128K TA Information'}
-              color={'red'}
+              color={'bg-red-50'}
               idHandle={'ch128k'}
             />
             <CourseInfo
@@ -51,7 +51,7 @@ export default function OH (props) {
               class={ch128l}
               info={info['128L']}
               title={'CH128L TA Information'}
-              color={'green'}
+              color={'bg-green-50'}
               idHandle={'ch128l'}
             />
             <CourseInfo
@@ -59,7 +59,7 @@ export default function OH (props) {
               class={ch220c}
               info={info['220C']}
               title={'CH220C TA Information'}
-              color={'blue'}
+              color={'bg-blue-50'}
               idHandle={'ch220c'}
             />
           </div>
