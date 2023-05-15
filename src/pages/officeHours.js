@@ -31,9 +31,9 @@ export default function OH (props) {
 
   return (
     <>
-      <div className='mb-20 mt-10'>
+      <div className='mb-20 mt-10 mx-5'>
         <h1 className='font-bold text-2xl text-center mb-3'>Office Hours & Email</h1>
-        <p className='text-xl text-center mb-3'>Note: This page will be updated as more information become available!</p>
+        <p className='text-xl text-center mb-3 border-b'>Note: This page will be updated as more information become available!</p>
         <h2 className='font-bold text-2xl text-center mb-3'>Lab Coordinators</h2>
         <p className='text-xl text-center mb-3'>Dr. Conrad Fjetland – Office NHB 1.128, M 12-1, Th 10-11 in person</p>
         <h2 className='text-l text-center mb-20'>Lab TAs e-mail addresses and Office Hours: (all TA office hours are via zoom, so check Canvas for the link)</h2>
