@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import image from '../../resources/header.svg';
-import HomepageCard from './homepageCard.js';
-import SharedContent from './sharedContentModal.js';
+import HomepageCard from '../../resources/assets/homepageCard.js';
+import SharedContent from '../../resources/sharedResources/sharedContentModal.js';
 
 const inter = Inter({ subsets: ['latin'] })
 

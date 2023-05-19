@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import footerImg from '../../../resources/header.svg'
+import footerImg from '../header.svg'
 import Link from 'next/link';
 
 export default function Footer (props) {

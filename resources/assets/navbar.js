@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
-import headerImage from '../../../resources/header.svg';
+import headerImage from '../header.svg';
 
 
 export default function NavBar(props) {
