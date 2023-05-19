@@ -8,6 +8,7 @@ import readRelevantInfo from '../../../resources/helperFunctions/readingRelevant
 export default function CH128KLandingPage (props) {
   let startInfoModified = readStartDateFile(startInfo);
   let CH128KClassInfo = readRelevantInfo(relevantInfo);
+  props.setClass('128K');
   return (
     <>
       <LandingPage
@@ -15,6 +16,7 @@ export default function CH128KLandingPage (props) {
         classInfoLabs = {CH128KClassInfo.labs}
         moreClassInfo = {CH128KClassInfo.moreInformation}
         startInfo = {startInfoModified}
+        section='CH128K'
       />
     </>
   )
