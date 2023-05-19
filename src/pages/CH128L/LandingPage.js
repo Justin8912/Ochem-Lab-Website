@@ -17,6 +17,7 @@ export default function CH128LLandingPage (props) {
         moreClassInfo = {CH128LClassInfo.moreInformation}
         startInfo = {startInfoModified}
         section='CH128L'
+        syllabusLink = {'/128L.pdf'}
       />
     </>
   )

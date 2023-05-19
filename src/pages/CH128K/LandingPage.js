@@ -17,6 +17,7 @@ export default function CH128KLandingPage (props) {
         moreClassInfo = {CH128KClassInfo.moreInformation}
         startInfo = {startInfoModified}
         section='CH128K'
+        syllabusLink='/128K.pdf'
       />
     </>
   )

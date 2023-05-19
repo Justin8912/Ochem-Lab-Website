@@ -18,6 +18,7 @@ export default function CH220C (props) {
         moreClassInfo = {CH220CClassInfo.moreInformation}
         startInfo={startInfoModified}
         section='CH220C'
+        syllabusLink='/220C.pdf'
       />
     </>
   )

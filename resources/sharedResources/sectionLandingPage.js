@@ -1,4 +1,4 @@
-import react from 'react';
+import react, {useState} from 'react';
 import Button from '../assets/button.js';
 import {v4 as uuidv4} from 'uuid';
 import Link from 'next/link';
@@ -39,11 +39,12 @@ export default function LandingPage (props) {
                     </>
                   )
                 }})}
-                <Button
-                    link=''
-                    color={`bg-${props.classColor}`}
-                    name={'Syllabus'}
-                  />
+                  <Button
+                      link = {'https://fjetland.cm.utexas.edu/courses/organiclab/Syllabi' + props.syllabusLink}
+                      color={`bg-${props.classColor}`}
+                      name={'Syllabus'}
+                    />
+
 
               {props.classInfoLabs.map((obj) => {
                 return (
