@@ -8,6 +8,7 @@ import readRelevantInfo from '../../../resources/helperFunctions/readingRelevant
 export default function CH220C (props) {
   let startInfoModified = readStartDateFile(startInfo);
   let CH220CClassInfo = readRelevantInfo(relevantInfo);
+  props.setClass('220C');
 
   return (
     <>
@@ -16,6 +17,7 @@ export default function CH220C (props) {
         classInfoLabs = {CH220CClassInfo.labs}
         moreClassInfo = {CH220CClassInfo.moreInformation}
         startInfo={startInfoModified}
+        section='CH220C'
       />
     </>
   )

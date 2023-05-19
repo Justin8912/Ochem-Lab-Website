@@ -5,9 +5,10 @@ import relevantInfo from '../../../resources/classInfo/CH128L/RelevantInfo.txt'
 import readStartDateFile from '../../../resources/helperFunctions/readingStartDate.js';
 import readRelevantInfo from '../../../resources/helperFunctions/readingRelevantInfo.js';
 
-export default function CH128KLandingPage (props) {
+export default function CH128LLandingPage (props) {
   let startInfoModified = readStartDateFile(startInfo);
   let CH128LClassInfo = readRelevantInfo(relevantInfo);
+  props.setClass('128L');
   return (
     <>
       <LandingPage
@@ -15,6 +16,7 @@ export default function CH128KLandingPage (props) {
         classInfoLabs = {CH128LClassInfo.labs}
         moreClassInfo = {CH128LClassInfo.moreInformation}
         startInfo = {startInfoModified}
+        section='CH128L'
       />
     </>
   )

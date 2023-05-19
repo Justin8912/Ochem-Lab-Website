@@ -7,7 +7,7 @@ export default function LandingPage (props) {
   return (
     <>
       <div
-        className='grid grid-cols-1 my-10 mx-10 xl:mx-48 xl:mt-24 xl:mb-32 xl:grid-cols-2 '
+        className='grid grid-cols-1 my-5 mx-10 xl:mx-48 xl:mt-24 xl:mb-32 xl:grid-cols-2'
       >
 
         <div className='col-span-1'>
