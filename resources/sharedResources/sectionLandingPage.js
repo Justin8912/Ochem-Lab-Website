@@ -12,7 +12,7 @@ export default function LandingPage (props) {
 
         <div className='col-span-1'>
           <div
-          className="rounded overflow-hidden shadow-lg mx-auto h-min max-w-lg mb-8 xl:mb-0"
+          className="rounded overflow-hidden shadow-lg mx-auto h-min max-w-lg mb-8 xl:mb-0 xl:mr-1"
           style={{backgroundColor:'#efefef'}}
           >
             <div className={`font-bold text-2xl py-4 px-6 mb-3 text-center bg-${props.classColor} text-white`}>Important Documents</div>
