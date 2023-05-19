@@ -1,5 +1,5 @@
 import react from 'react';
-import Button from '../../src/pages/assets/button.js';
+import Button from '../assets/button.js';
 import {v4 as uuidv4} from 'uuid';
 import Link from 'next/link';
 

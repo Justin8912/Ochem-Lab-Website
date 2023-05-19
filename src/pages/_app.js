@@ -1,8 +1,8 @@
 import '@/styles/globals.css'
 import {useRouter} from 'next/router';
 import react, {useState, useEffect} from 'react';
-import Navbar from './assets/navbar.js';
-import Footer from './assets/footer.js';
+import Footer from '../../resources/assets/footer.js';
+import Navbar from '../../resources/assets/navbar.js';
 
 export default function App({ Component, pageProps }) {
   const [classSelector, setClass] = useState('');

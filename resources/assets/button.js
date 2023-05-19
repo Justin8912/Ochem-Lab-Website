@@ -1,7 +1,5 @@
 import react from 'react';
 import Link from 'next/link';
-
-
 export default function Button(props) {
 
   return (

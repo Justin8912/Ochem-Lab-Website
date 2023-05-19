@@ -1,8 +1,8 @@
 import OHDoc from '../../resources/OfficeHours/renderedInfo.json';
 import react, {useEffect, useState} from 'react';
 import {v4 as uuidv4} from 'uuid';
-import TATable from './assets/officeHourTable.js';
-import CourseInfo from './assets/ohTARendering.js';
+import TATable from '../../resources/assets/officeHourTable.js';
+import CourseInfo from '../../resources/assets/ohTARendering.js';
 
 export default function OH (props) {
 

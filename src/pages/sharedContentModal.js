@@ -1,5 +1,5 @@
 import react from 'react';
-import Button from './assets/button.js';
+import Button from '../../resources/assets/button.js';
 
 export default function SharedContent (props) {
   return (
