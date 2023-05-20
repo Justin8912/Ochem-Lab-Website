@@ -60,3 +60,19 @@ From here, you will see two files: 'RelevantInfo.txt' and 'Start.txt':
     - Please separate separate information by a blank line.
 
 Once you make all the necessary changes, run the following command in your terminal: `npm run build`. This updates the bundle that is created by the compiler and will render the changes to your webpage.
+
+### Email and Office Hours
+To change the email and office hours information, follow these steps. 
+1. Export your excel sheet with the TA information as a TSV (tab separated value) file 
+2. Name that file OH.tsv
+3. Put that file in the following directory: resources/officeHours/
+4. Run `npm run build` and this will compile your new TA information. 
+
+It is VERY important that you put it in as a tab separated file as it will not render at all if you dont. 
+
+When you run the command given above, there will be a message indicating if the information was read successfully or if it was unsuccessful.
+![Screen Shot 2023-05-20 at 5 41 55 PM](https://github.com/Justin8912/Ochem-Lab-Website/assets/95107100/c9a02b49-6a8e-4114-ba6d-60cfcb735509)
+![Screen Shot 2023-05-20 at 5 43 16 PM](https://github.com/Justin8912/Ochem-Lab-Website/assets/95107100/ff091507-402d-4b17-ae9b-a52126ff2f2b)
+
+HOWEVER, if the rendering of the TA information is unsuccessful, the rest of the page will still render. 
+ 
