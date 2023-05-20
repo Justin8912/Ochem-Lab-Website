@@ -22,7 +22,9 @@ To change information that is specfic to a specific section follow the following
 2. Choose which section you would like to change
 
 From here, you will see two files: 'RelevantInfo.txt' and 'Start.txt':
+
 ![Screen Shot 2023-05-08 at 4 14 16 PM](https://user-images.githubusercontent.com/95107100/236936935-95ace16a-5007-4b18-a237-547af454d732.png)
+
 - 'RelevantInfo.txt'
     - This refers to the information that is rendered on each class homepage. It is the content that is rendered in the 'Important Documents' modal (shown above). There are two types of information that you can render, as is shown in the picture:
         - Text, which will be shown at the top of the modal in the order in which it typed in the txt document.
@@ -41,7 +43,9 @@ From here, you will see two files: 'RelevantInfo.txt' and 'Start.txt':
             - It is important that you maintain this structure.
 
     - There is one other important thing to remember. Between differing content on the page, PLEASE remember to separate it with one blank line of text. This is important for how the text is parsed.
+
 ![Screen Shot 2023-05-08 at 4 14 22 PM](https://user-images.githubusercontent.com/95107100/236937030-b0697246-76ce-4810-9a42-b241cc86bebd.png)
+
 - 'Start.txt'
     - This is similar to the previous document but a bit simpler.
     - You will have the ability to add information in text, and list formats:
@@ -71,6 +75,7 @@ To change the email and office hours information, follow these steps.
 It is VERY important that you put it in as a tab separated file as it will not render at all if you dont. 
 
 When you run the command given above, there will be a message indicating if the information was read successfully or if it was unsuccessful.
+
 ![Screen Shot 2023-05-20 at 5 41 55 PM](https://github.com/Justin8912/Ochem-Lab-Website/assets/95107100/c9a02b49-6a8e-4114-ba6d-60cfcb735509)
 ![Screen Shot 2023-05-20 at 5 43 16 PM](https://github.com/Justin8912/Ochem-Lab-Website/assets/95107100/ff091507-402d-4b17-ae9b-a52126ff2f2b)
 
