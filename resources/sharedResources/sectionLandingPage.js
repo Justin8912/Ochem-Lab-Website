@@ -42,6 +42,7 @@ export default function LandingPage (props) {
                   <Button
                       link = {'https://fjetland.cm.utexas.edu/courses/organiclab/Syllabi' + props.syllabusLink}
                       color={`bg-${props.classColor}`}
+                      hoverColor={props.hoverColor}
                       name={'Syllabus'}
                     />
 
@@ -53,6 +54,7 @@ export default function LandingPage (props) {
                     <Button
                       link={obj.link}
                       color={`bg-${props.classColor}`}
+                      hoverColor={props.hoverColor}
                       name={obj.lab}
                       key={uuidv4()}
                     />

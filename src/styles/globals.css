@@ -38,13 +38,14 @@ body {
 }
 
 @layer components {
-  .hover-slate-500 {
+  .hover-pointer {
     @apply hover:text-slate-500;
+    @apply hover:cursor-pointer;
   }
 }
 
 .expanded-content {
-  height: 420px;
+  height: 460px;
 }
 
 .dropdown {

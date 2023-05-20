@@ -14,6 +14,7 @@ export default function CH220C (props) {
     <>
       <LandingPage
         classColor='blue-700'
+        hoverColor={'hover:bg-blue-600'}
         classInfoLabs = {CH220CClassInfo.labs}
         moreClassInfo = {CH220CClassInfo.moreInformation}
         startInfo={startInfoModified}

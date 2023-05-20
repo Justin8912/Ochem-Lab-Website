@@ -12,15 +12,24 @@ export default function Home() {
       <div className='grid md:grid-cols-3 gap-4 container mx-auto px-5 mt-20 sm:grid-cols-1' >
         <HomepageCard
           courseName='CH 220C'
-          imageLink='CH220C'
+          class={'CH220C'}
+          imageLink='/220Chomepage.png'
+          color={'bg-blue-700'}
+          buttonHover={'hover:bg-blue-600'}
         />
         <HomepageCard
           courseName='CH 128K'
-          imageLink='CH128K'
+          class={'CH128K'}
+          imageLink='/128Khomepage.png'
+          color={'bg-red-700'}
+          buttonHover={'hover:bg-red-600'}
         />
         <HomepageCard
           courseName='CH 128L'
-          imageLink='CH128L'
+          class={'CH128L'}
+          imageLink='/128Lhomepage.png'
+          color={'bg-green-700'}
+          buttonHover={'hover:bg-green-600'}
         />
       </div>
 
