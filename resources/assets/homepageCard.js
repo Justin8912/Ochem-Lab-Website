@@ -4,6 +4,7 @@ import Link from 'next/link';
 import CH220C from '../../resources/220Chomepage.png'
 import CH128K from '../../resources/128Khomepage.png'
 import CH128L from '../../resources/128Lhomepage.png'
+import Button from './button.js';
 
 export default function HomepageCard (props) {
   let imgHolder, buttonColor, buttonColorHover;
@@ -37,11 +38,12 @@ export default function HomepageCard (props) {
           }
           </div>
           <div className='flex flex-col items-center'>
-            <Link href={`${props.imageLink}/LandingPage`}>
-              <button className={`${buttonColor} ${buttonColorHover} text-white font-bold py-2 px-4 rounded mb-5 tracking-wide`}>
-                Continue
-              </button>
-            </Link>
+            <Button
+              link={`${props.imageLink}/LandingPage`}
+              color={buttonColor}
+              hoverColor={buttonColorHover}
+              name={'Continue'}
+            />
           </div>
       </div>
     </>
