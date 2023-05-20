@@ -10,7 +10,6 @@ export default function OH (props) {
   const [ch128k, setch128k] = useState(false);
   const [ch128l, setch128l] = useState(false);
   const [ch220c, setch220c] = useState(false);
-  const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
     setInfo(OHDoc);

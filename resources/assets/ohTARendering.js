@@ -2,6 +2,7 @@ import react, {useEffect, useState} from 'react';
 import TATable from './officeHourTable.js';
 
 export default function CourseSection (props) {
+  const [search, setSearch] = useState('');
   if (props.class) {
     return (
       <div className={`relative shadow-lg text-center bg-white sm:w-2/5 expanded-content max-h-fit mx-auto rounded-lg ease-linear bg-slate-50 transition-all duration-500 overflow-hidden mb-20`}>
@@ -11,9 +12,16 @@ export default function CourseSection (props) {
           </svg>
           <h3 id={props.idHandle} className={`font-bold text-xl text-center col-span-6`}>{props.title}</h3>
           </div>
-          <div className='grid grid-cols-1'>
+          <div className='grid grid-cols-1 pt-5'>
+            <div>
+              <input type='text'
+                className='rounded bg-slate-100 text-center'
+                placeHolder='Search for your TA'
+                onChange={(e) => {setSearch(e.target.value)}}
+              ></input>
+            </div>
             <div className='tableDisplay my-5 overflow-scroll'>
-              <TATable section={props.info}/>
+              <TATable section={props.info} search={search}/>
             </div>
             <div className={`items-end ${props.color} py-5`} id={props.idHandle}></div>
           </div>
