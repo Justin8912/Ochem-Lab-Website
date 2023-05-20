@@ -60,38 +60,40 @@ export default function Saftey() {
         <div className='col-span-1 min-w-min px-10 md:mr-5 bg-white sidebar-styling transition duration-200 py-9 leading-8 text-left' onClick={clickHandler}>
           <h2 className='font-bold text-xl text-center mb-3'>Saftey Topics</h2>
           {/* This will be the sidebar */}
-          <h3 className='font-bold hover-slate-500' id='GeneralSafety'>General Safety Rules</h3>
-          <h3 className='font-bold hover-slate-500' id='SafetyEq'>Safety Equipment</h3>
+          <h3 className='font-bold hover-pointer' id='GeneralSafety'>General Safety Rules</h3>
+          <h3 className='font-bold hover-pointer' id='SafetyEq'>Safety Equipment</h3>
           <h3 className='font-bold'>Standard Operating Procedures</h3>
           <ol className='ml-10 list-alpha'>
-            <li className='hover-slate-500' id='Needles'>Using Needles and Syringes</li>
-            <li className='hover-slate-500' id='Bromine'>Using Bromine</li>
-            <li className='hover-slate-500' id='Waste'>Disposing of Waste</li>
-            <li className='hover-slate-500' id='Gloves'>Wearing Gloves</li>
-            <li className='hover-slate-500' id='AandB'>Using Acids and Bases</li>
-            <li className='hover-slate-500' id='Pressure'>Pressure</li>
-            <li className='hover-slate-500' id='UOC'>Using Organic Chemicals</li>
-            <li className='hover-slate-500' id='Glass'>Glassware</li>
-            <li className='hover-slate-500' id='Heating'>Heating Reactions</li>
+            <li className='hover-pointer' id='Needles'>Using Needles and Syringes</li>
+            <li className='hover-pointer' id='Bromine'>Using Bromine</li>
+            <li className='hover-pointer' id='Waste'>Disposing of Waste</li>
+            <li className='hover-pointer' id='Gloves'>Wearing Gloves</li>
+            <li className='hover-pointer' id='AandB'>Using Acids and Bases</li>
+            <li className='hover-pointer' id='Pressure'>Pressure</li>
+            <li className='hover-pointer' id='UOC'>Using Organic Chemicals</li>
+            <li className='hover-pointer' id='Glass'>Glassware</li>
+            <li className='hover-pointer' id='Heating'>Heating Reactions</li>
           </ol>
           <h3 className='font-bold'>Emergency Operating Procedures</h3>
           <ol className='ml-10 list-alpha'>
-            <li className='hover-slate-500' id='EtC'>Exposure to Chemicals</li>
-            <li className='hover-slate-500' id='Fires'>Fires</li>
-            <li className='hover-slate-500' id='Spills'>Spills</li>
-            <li className='hover-slate-500' id='Evacuations'>Evacuations</li>
-            <li className='hover-slate-500' id='Accidents'>Accidents</li>
-            <li className='hover-slate-500' id='Electrical'>Electrical</li>
+            <li className='hover-pointer' id='EtC'>Exposure to Chemicals</li>
+            <li className='hover-pointer' id='Fires'>Fires</li>
+            <li className='hover-pointer' id='Spills'>Spills</li>
+            <li className='hover-pointer' id='Evacuations'>Evacuations</li>
+            <li className='hover-pointer' id='Accidents'>Accidents</li>
+            <li className='hover-pointer' id='Electrical'>Electrical</li>
           </ol>
-          <h3 className='font-bold hover-slate-500' id='ExHA'>Example Safety Analysis</h3>
-          <Link className='font-bold hover-slate-500' href='https://fjetland.cm.utexas.edu/courses/organiclab/Safety/One%20File.pdf'>All EOPs and SOPs in one file</Link>
+          <h3 className='font-bold hover-pointer' id='ExHA'>Example Safety Analysis</h3>
+          <Link className='font-bold hover-pointer' href='https://fjetland.cm.utexas.edu/courses/organiclab/Safety/One%20File.pdf'>All EOPs and SOPs in one file</Link>
         </div>
-        <div className='sm:col-span-1 md:col-span-3 lg:col-span-3 py-9 px-5'>
-          <ContentManager
-            overallFormat = 'leading-8'
-            headingFormat = 'font-bold text-xl'
-            olFormat = 'list-alpha mx-10 list-inside'
-          />
+        <div className='sm:col-span-1 md:col-span-3 lg:col-span-3 py-4 px-5 align-middle'>
+          <div className='bg-white mx-auto px-10 py-5 rounded align-middle'>
+            <ContentManager
+              overallFormat = 'leading-8'
+              headingFormat = 'font-bold text-xl'
+              olFormat = 'list-alpha mx-10 list-inside'
+            />
+          </div>
         </div>
 
       </div>
