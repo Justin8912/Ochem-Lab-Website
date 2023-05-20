@@ -68,7 +68,7 @@ function readingTSV(file) {
     }
   });
 }
-fs.readFile(path.resolve(__dirname, '../OfficeHours/exampleOH.tsv'), (err, data)=>{
+fs.readFile(path.resolve(__dirname, '../OfficeHours/OH.tsv'), (err, data)=>{
 
   if (err) {
     console.log('There was an error when trying to retrieve the TA information from the file. \
