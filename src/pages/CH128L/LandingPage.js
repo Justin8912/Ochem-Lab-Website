@@ -13,6 +13,7 @@ export default function CH128LLandingPage (props) {
     <>
       <LandingPage
         classColor='green-700'
+        hoverColor={'hover:bg-green-600'}
         classInfoLabs = {CH128LClassInfo.labs}
         moreClassInfo = {CH128LClassInfo.moreInformation}
         startInfo = {startInfoModified}

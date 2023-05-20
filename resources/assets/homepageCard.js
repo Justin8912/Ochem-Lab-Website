@@ -10,15 +10,15 @@ export default function HomepageCard (props) {
   if (props.imageLink === 'CH220C') {
     imgHolder = CH220C;
     buttonColor = 'bg-blue-700';
-    buttonColorHover = 'bg-blue-600';
+    buttonColorHover = 'hover:bg-blue-600';
   } else if (props.imageLink === 'CH128K') {
     imgHolder = CH128K;
     buttonColor = 'bg-red-700';
-    buttonColorHover = 'bg-red-600';
+    buttonColorHover = 'hover:bg-red-600';
   } else if (props.imageLink === 'CH128L') {
     imgHolder = CH128L;
     buttonColor = 'bg-green-700';
-    buttonColorHover = 'bg-green-600';
+    buttonColorHover = 'hover:bg-green-600';
   }
   return (
     <>
@@ -38,7 +38,7 @@ export default function HomepageCard (props) {
           </div>
           <div className='flex flex-col items-center'>
             <Link href={`${props.imageLink}/LandingPage`}>
-              <button className={`${buttonColor} hover:${buttonColorHover} text-white font-bold py-2 px-4 rounded mb-5 tracking-wide`}>
+              <button className={`${buttonColor} ${buttonColorHover} text-white font-bold py-2 px-4 rounded mb-5 tracking-wide`}>
                 Continue
               </button>
             </Link>

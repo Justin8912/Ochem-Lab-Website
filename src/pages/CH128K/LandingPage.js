@@ -13,6 +13,7 @@ export default function CH128KLandingPage (props) {
     <>
       <LandingPage
         classColor='red-700'
+        hoverColor={'hover:bg-red-600'}
         classInfoLabs = {CH128KClassInfo.labs}
         moreClassInfo = {CH128KClassInfo.moreInformation}
         startInfo = {startInfoModified}

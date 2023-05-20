@@ -11,19 +11,19 @@ export default function SharedContent (props) {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-3 flex-col mx-10 items-center'>
           <Button
             color={'bg-orange-700'}
-            hoverColor={'bg-orange-600'}
+            hoverColor={'hover:bg-orange-600'}
             name='Quest'
             link='https://quest.cns.utexas.edu/'/>
 
           <Button
             color={'bg-yellow-500'}
-            hoverColor={'bg-yellow-400'}
+            hoverColor={'hover:bg-yellow-400'}
             name='Turnitin'
             link='https://www.turnitin.com/'/>
 
           <Button
             color={'bg-blue-700'}
-            hoverColor={'bg-yellow-600'}
+            hoverColor={'hover:bg-blue-600'}
             name='Safety'
             link='/saftey/saftey'/>
         </div>
@@ -31,13 +31,13 @@ export default function SharedContent (props) {
 
           <Button
             color={'bg-pink-700'}
-            hoverColor={'bg-pink-600'}
+            hoverColor={'hover:bg-pink-600'}
             name='IR Analysis Flowchart'
             link='https://fjetland.cm.utexas.edu/courses/organiclab/IRflowchart.gif'/>
 
           <Button
             color={'bg-teal-700'}
-            hoverColor={'bg-teal-600'}
+            hoverColor={'hover:bg-teal-600'}
             name='Email & Office Hours'
             link='/officeHours'/>
 
