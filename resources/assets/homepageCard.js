@@ -26,6 +26,7 @@ export default function HomepageCard (props) {
               color={props.color}
               hoverColor={props.buttonHover}
               name={'Continue'}
+
             />
           </div>
       </div>

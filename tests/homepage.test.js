@@ -2,11 +2,16 @@ import React from 'react';
 import {render, screen} from "@testing-library/react";
 import userEvent from '@testing-library/user-event';
 import '@testing-library/jest-dom/extend-expect';
+import {useRouter} from 'next/router';
+import {createMockRouter} from './test-utils/createMockRouter.js';
+import {RouterContext} from 'next/dist/shared/lib/router-context';
+import Link from 'next/link';
 
 // components
 import HomePage from '../src/pages/index.js';
 import Navbar from '../resources/assets/navbar.js';
 import Footer from '../resources/assets/footer.js';
+import Button from '../resources/assets/button.js';
 
 describe('Homepage', () => {
   beforeEach(() => {
@@ -104,5 +109,38 @@ describe('Responsive design test', () => {
 
   it('Should have a responsive footer. Should turn into one column', () => {
     expect(true).toBe(true);
+  })
+});
+
+jest.mock('next/router', () => ({
+  useRouter: () => ({
+    push: jest.fn(),
+  }),
+}));
+
+describe('Links should work properly', () => {
+  it('Should navigate to the proper place when clicked - footer links', () => {
+    render(<Footer/>);
+
+    const quest = screen.getByRole('link', {name:'Quest'});
+    const canv = screen.getByRole('link', {name:'Canvas'});
+    const turnitin = screen.getByRole('link', {name:'Turnitin'});
+
+    expect(quest.href).toBe('https://quest.cns.utexas.edu/');
+    expect(canv.href).toBe('https://canvas.utexas.edu/');
+    expect(turnitin.href).toBe('https://www.turnitin.com/');
+  });
+
+  it('Should navigate to proper course pages when relevant links are clicked on the navbar', () => {
+    let {route} = useRouter();
+    render(<>
+      <RouterContext.Provider value={createMockRouter({route:'/CH220C/LandingPage'})}>
+        <Navbar/>
+      </RouterContext.Provider>
+    </>);
+
+    let ch220c = screen.getByRole('link', {name: 'CH 220C'});
+    userEvent.click(ch220c);
+    expect(route).toHaveBeenCalledWith('/CH220C/LandingPage')
   })
 })

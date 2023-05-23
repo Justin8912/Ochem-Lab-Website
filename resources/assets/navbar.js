@@ -11,12 +11,12 @@ export default function NavBar(props) {
     <>
       <nav className="justify-between burntOrange p-6 md:flex mx-auto text-center md:text-right">
         <div className="flex items-center justify-center md:justify-left flex-shrink-0 text-white mr-6">
-          <Image src={headerImage} alt='Header image' height={60} width={60} style={{paddingRight:'10px'}}/>
+          <Image src={headerImage} alt='Header image' height={60} width={60} style={{paddingRight:'10px'}} data-testid="mainCourseLogo"/>
           <Link className="font-semibold text-xl tracking-tight" href='/'>Organic Chemistry Labs</Link>
         </div>
         <div className="w-full block flex-grow md:flex items-center md:w-auto">
           <div className="text-sm md:flex-grow">
-            <Link href="/CH220C/LandingPage" className={`${courseStyle} ${props.class==='220C' && selectedClassStyle}`}>
+            <Link href="/CH220C/LandingPage" className={`${courseStyle} ${props.class==='220C' && selectedClassStyle}`} passHref>
               CH 220C
             </Link>
             <Link href="/CH128K/LandingPage" className={`${courseStyle} ${props.class==='128K' && selectedClassStyle}`}>
