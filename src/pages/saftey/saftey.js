@@ -1,10 +1,10 @@
 import react, {useState} from 'react';
 import Link from 'next/link';
-import GeneralSafety from '../../../resources/Safety topics/General Saftey Rules.js';
-import SafetyEq from '../../../resources/Safety topics/Safety Equipment.js';
-import SOPs from '../../../resources/Safety Topics/SOPs.js';
-import EOPs from '../../../resources/Safety Topics/EOPs.js';
-import ExampleHA from '../../../resources/Safety topics/exampleHA.js'
+import GeneralSafety from '../../../resources/SafetyTopics/General Saftey Rules.js';
+import SafetyEq from '../../../resources/SafetyTopics/Safety Equipment.js';
+import SOPs from '../../../resources/SafetyTopics/SOPs.js';
+import EOPs from '../../../resources/SafetyTopics/EOPs.js';
+import ExampleHA from '../../../resources/SafetyTopics/exampleHA.js'
 
 
 let HolderState = () => {

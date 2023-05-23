@@ -132,6 +132,7 @@ describe('Links should work properly', () => {
   });
 
   it('Should navigate to proper course pages when relevant links are clicked on the navbar', () => {
+    // https://www.youtube.com/watch?v=uF2lqBluQV8&ab_channel=BrunoAntunes
     let {route} = useRouter();
     render(<>
       <RouterContext.Provider value={createMockRouter({route:'/CH220C/LandingPage'})}>
