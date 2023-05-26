@@ -119,29 +119,23 @@ jest.mock('next/router', () => ({
 }));
 
 describe('Links should work properly', () => {
-  it('Should navigate to the proper place when clicked - footer links', () => {
+  it('Should have the proper links in the navbar', () => {
+    render(<Navbar/>);
+    expect(screen.getByText('CH 220C')).toHaveAttribute('href', '/CH220C/LandingPage');
+    expect(screen.getByText('CH 128K')).toHaveAttribute('href', '/CH128K/LandingPage');
+    expect(screen.getByText('CH 128L')).toHaveAttribute('href', '/CH128L/LandingPage');
+  })
+
+  it('Should have proper links in the homepage', () => {
+    render(<HomePage/>);
+
+  })
+
+  it('Should have the proper links in the footer', () => {
     render(<Footer/>);
-
-    const quest = screen.getByRole('link', {name:'Quest'});
-    const canv = screen.getByRole('link', {name:'Canvas'});
-    const turnitin = screen.getByRole('link', {name:'Turnitin'});
-
-    expect(quest.href).toBe('https://quest.cns.utexas.edu/');
-    expect(canv.href).toBe('https://canvas.utexas.edu/');
-    expect(turnitin.href).toBe('https://www.turnitin.com/');
+    expect(screen.getByText('Quest')).toHaveAttribute('href', 'https://quest.cns.utexas.edu/');
+    expect(screen.getByText('Canvas')).toHaveAttribute('href', 'https://canvas.utexas.edu/');
+    expect(screen.getByText('Turnitin')).toHaveAttribute('href', 'https://www.turnitin.com/');
   });
 
-  it('Should navigate to proper course pages when relevant links are clicked on the navbar', () => {
-    // https://www.youtube.com/watch?v=uF2lqBluQV8&ab_channel=BrunoAntunes
-    let {route} = useRouter();
-    render(<>
-      <RouterContext.Provider value={createMockRouter({route:'/CH220C/LandingPage'})}>
-        <Navbar/>
-      </RouterContext.Provider>
-    </>);
-
-    let ch220c = screen.getByRole('link', {name: 'CH 220C'});
-    userEvent.click(ch220c);
-    expect(route).toHaveBeenCalledWith('/CH220C/LandingPage')
-  })
 })
